@@ -1,0 +1,865 @@
+/*
+Theme Name: BlankSlate
+Theme URI: http://tidythemes.com/blankslate/
+Description: 3.0+ has been completely and massively overhauled. DO NOT UPGRADE current projects to this version automatically. You will lose all customizations whether you're using a child theme or not. BEFORE USING AND ESPECIALLY UPGRADING IN GENERAL PLEASE READ: tidythemes.com/concept. The bare essentials of a WordPress theme (an HTML5 boilerplate), no visual CSS styles added. Perfect for those who would like to build their own theme from scratch or for clients if you're a developer or designer. This theme is clean, valid code, semi minified, no programmer comments, SEO-friendly and 100% open source. One custom menu and one widgetized sidebar to get you started. If you don't know CSS and would like to learn we've prepared: tidythemes.com/want-to-learn-css and please visit us in the forum for further help: tidythemes.com/forum - Thank You and Enjoy
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Version: 3.1
+Tags: black, blue, white, light, one-column, flexible-width, custom-menu, featured-imagesu, microformats, sticky-post, threaded-comments, translation-ready
+License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
+License URI: https://www.gnu.org/licenses/gpl.html
+*/
+
+html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+	font-size: 100%;
+	font: inherit;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	margin: 0 auto;
+}
+body
+{
+	line-height: 1;
+	background-color: #eff5f8;
+}
+li
+{
+	padding: 3px 0px 3px 0px;
+}
+ol, ul
+{
+	list-style: none;
+}
+blockquote, q
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+	content: none;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+.clear
+{
+	clear: both;
+}
+.sticky
+{
+}
+.bypostauthor
+{
+}
+.wp-caption
+{
+}
+.wp-caption-text
+{
+}
+.gallery-caption
+{
+}
+.alignright
+{
+}
+.alignleft
+{
+}
+.aligncenter
+{
+}
+strong
+{
+	font-weight: bold;
+}
+a:visited
+{
+	color: #04557f;
+}
+a
+{
+	color: #04557f;
+	text-decoration: none;
+}
+
+
+
+
+.menu-mainmenu-container ul 
+{
+	list-style-type: none; 
+	list-style-image: none; 
+	width: 885px;
+	height: 36px;
+	padding-left: 112px;
+	background-color: White;
+	border-bottom: 1px solid #dbe5e9;
+	
+}
+.menu-mainmenu-container li 
+{
+	display: block;
+	float: left;
+	height: 28px;
+	padding: 8px 20px 0px 20px;
+	clear: right;
+}
+.menu-mainmenu-container ul li a 
+{
+	text-decoration:none;  
+	padding: 0px 0px 0px 0px; 
+	font-family: Calibri, Arial, Verdana;
+	font-size: large;
+	color: #669999;
+}
+.menu-item:hover 
+{
+	cursor: pointer;
+}
+.current-menu-item
+{
+	color: #04557f;
+	font-weight: 700;
+	background-image: url('wp-content/uploads/nav_selection.jpg');
+}
+	
+
+
+
+
+
+
+.menu-headerlinks-container ul 
+{
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	list-style-type: none; 
+	list-style-image: none; 
+	padding-top: 0px;
+	padding-right: 5px;
+}
+.menu-headerlinks-container li 
+{
+	display: inline;
+	padding: 0px 4px 0px 4px;
+	border-right: solid 1px #669999;
+	
+}
+.menu-headerlinks-container .lastitem
+{
+	border: none;
+}
+.menu-headerlinks-container ul li a 
+{
+	text-decoration:none;  
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	color: blue;
+	font-family: Calibri, Arial, Verdana;
+	font-size: 90%;
+	color: #669999;
+}
+.menu-headerlinks-container ul li a:hover 
+{
+	color: purple;
+	font-family: Calibri, Arial, Verdana;
+	color: #669999;
+	font-size: 90%;	
+}
+
+
+.clientLogin
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+.mainLogo
+{
+	width: 112px;
+	height: 75px;
+	float: left;
+}
+.TitleBox
+{
+	width: 255px;
+	height: 75px;
+	background-image: url('wp-content/uploads/HeaderDarkBlueBackground.gif');
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.Title
+{
+	position: absolute;
+	bottom: 15px;
+	left: 13px;
+	vertical-align: bottom;
+	color: White;
+	font-size: 16pt;
+	font-family: Calibri, Arial, Verdana;
+}
+.MainHeader
+{
+	width: 100%;
+	height: 75px;
+	background-image: url('wp-content/uploads/HeaderLightBlueBackground.gif');
+	position: relative;
+}
+
+
+
+#searchBox
+{
+	width: 138px;
+	height: 20px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-image: url('wp-content/uploads/searchBox.gif');
+	background-position:top;
+	background-repeat:no-repeat;
+}
+input#s
+{
+	width:110px;
+	position: absolute;
+	left: 5px;
+	top: 0px;
+	border: 0px;
+} 
+input#searchsubmit 
+{
+	border: 0px;
+	position: absolute;
+	right: 2px;
+	top: 1px;
+	width: 18px;
+	height: 18px;
+	background-image: url('wp-content/uploads/searchButton.gif');
+	background-color: White;
+} 
+.entry-title
+{
+}
+.entry-meta
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+}
+.entry-summary
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+	padding: 0px 0px 5px 15px;
+}
+
+
+
+.page-id-193 #PagePanelTwo
+{
+	background: url('wp-content/uploads/plant.jpg') no-repeat right top;	
+}
+
+
+
+
+
+.slider
+{
+	width: 200px;
+	height: 360px;
+	float: left;
+	clear: right;
+}
+.sliderSpacer
+{
+	height: 363px;
+	width: 106px;
+	background-image: url('wp-content/uploads/spacer.jpg');
+	float: left;
+}
+
+.bottomPanel
+{
+	height: auto;
+	width: 997px;
+	float: left;
+	background-color: White;
+	position: relative;	
+}
+.panelOne
+{
+	padding: 20px 20px 20px 200px;
+	width: 447px;
+	float: left;	
+}
+.panelOne a
+{
+	text-decoration: none;
+}
+.panelOne h2
+{
+	font-size: 100%;
+}
+.panelTwo
+{
+	padding: 20px 0px 20px 0px;
+	width: 330px;
+	float:left;
+}
+.panelTwo h2
+{
+	font-size: 100%;
+	
+}
+
+.extraImage
+{
+	position: absolute;
+	left: 10px;
+	bottom: 0px;
+	width: 172px;
+	height: 300px;
+	z-index: 999;
+}
+
+
+
+.date
+{
+	position: absolute;
+	left: 7px;
+	top: 15px;
+	font-family: Calibri, Arial, Verdana;
+	color: #669999;
+	font-weight: bolder;
+	font-size: smaller;
+}
+.year
+{
+	position: absolute;
+	left: 9px;
+	bottom: 13px;
+	font-family: Calibri, Arial, Verdana;
+	color: #999999;
+	font-weight: bolder;
+	font-size: smaller;
+}
+
+.newsIcon
+{
+	float: left;
+	padding: 0px 8px 2px 5px;
+}
+.newsLine
+{	
+	float: left;
+	background-image: url('wp-content/uploads/newsBackground.jpg');	
+	background-position: bottom;
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	height: 45px;
+	width: 330px;
+	position: relative;
+	cursor: pointer;
+}
+#newsText
+{
+	padding-top: 4px;
+}
+.newsLine:hover
+{
+	background-image: url('wp-content/uploads/newsBackground_Hover.jpg');	
+}
+#newsLink
+{
+	text-decoration: none;
+	float: right;
+	padding: 9px 9px 0px 0px;
+}
+
+
+
+
+.font
+{
+	font-family: Calibri, Arial, Verdana;	
+}
+.BlueGreen
+{
+	color: #669999;
+}
+
+
+#footer
+{
+	position: relative;
+	height: 30px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+#copyright
+{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	font-family: Calibri, Arial, Verdana;	
+	color: #669999;
+	padding-bottom: 50px;
+}
+
+
+
+
+#wrapper
+{
+	border: 1px solid #dbe5e9;
+	background-color: White;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+#PagePanelOne
+{
+	width: 189px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #dbe5e9;
+
+	min-height:575px;
+	height:auto !important;
+	height:575px;
+
+
+}
+#PagePanelOneHeader
+{
+	background-image: url('wp-content/uploads/columnheader.jpg');
+	height: 82px;
+	width: 189px;
+	position: relative;
+	margin-bottom: 20px;	
+}
+#PageHeaderText
+{
+	position: absolute;
+	bottom: 0px;
+	left: 5px;
+	font-family: Calibri, Arial, Verdana;
+	font-size: 190%;
+	color: White;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	line-height: 23px;
+}
+#PagePanelOneFooter
+{
+	bottom: 0px;
+	padding: 30px 0px 20px 7px;
+}
+#PagePanelTwo
+{
+	width: 808px;
+	float: left;
+	min-height:575px;
+	height:auto !important;
+	height:575px;	
+}
+#PageContent
+{
+	padding: 30px 20px 50px 20px;
+	min-height:575px;
+	height:auto !important;
+	height:575px;
+}
+
+#PagePanelThree
+{
+	width: 189px;
+	float: left;
+	min-height:575px;
+	height:auto !important;
+	height:575px;	
+}
+#PagePanelThreeHeader
+{
+}
+
+
+
+
+
+
+#navigation .children li
+{
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+
+#navigation > li
+{
+	background-image: none;
+	padding-bottom: 15px;	
+	border-bottom: 1px solid #dbe5e9;
+	margin: 0px 5px 15px 5px;
+}
+
+#navigation li
+{
+	background-image: none;
+	padding-bottom: 15px;	
+	border-bottom: 1px solid #dbe5e9;
+	margin: 0px 5px 15px 5px;
+}
+
+#navigation > .last
+{
+	border-bottom: 0px !important;		
+}
+.lastExpandable
+{
+	border-bottom: 0px !important;
+}
+
+
+#page-tree a
+{
+	text-decoration: none;
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+}
+#page-tree a.selected
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #06567f;
+	font-size: 100%;
+	background-color: transparent;
+	font-weight: bold;
+}
+#page-tree .expandable-hitarea
+{
+	width: 13px;
+	height: 13px;
+	background-position: top;
+	background-image: url('wp-content/uploads/expand.jpg');	
+}
+
+#page-tree .collapsable-hitarea
+{
+	width: 13px;
+	height: 13px;
+	background-position: top;	
+	background-image: url('wp-content/uploads/collapse.jpg');
+}
+#page-tree li
+{
+	background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#PostPanelOne
+{
+	width: 189px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #dbe5e9;
+	min-height:575px;
+	height:auto !important;
+	height:575px;
+}
+#PostPanelOneHeader
+{
+	background-image: url('wp-content/uploads/columnheader.jpg');
+	height: 82px;
+	width: 189px;
+	position: relative;
+	margin-bottom: 20px;	
+}
+#PostHeaderText
+{
+	position: absolute;
+	bottom: 0px;
+	left: 5px;
+	font-family: Calibri, Arial, Verdana;
+	font-size: 190%;
+	color: White;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	line-height: 23px;
+}
+#PostPanelOneFooter
+{
+	bottom: 10px;
+	padding: 30px 0px 20px 7px;
+	
+}
+#PostPanelTwo
+{
+	width: 618px;
+	float: left;
+	min-height:500px;
+	height:auto !important;
+	height:500px;	
+}
+#PostContent
+{
+	padding: 30px 20px 50px 20px;
+}
+
+#PostPanelThree
+{
+	width: 189px;
+	float: left;
+	min-height:575px;
+	height:auto !important;
+	height:575px;	
+}
+#PostPanelThreeHeader
+{
+	padding: 70px 5px 10px 0px;
+	border-bottom: 1px solid #dbe5e9;
+	overflow: hidden;
+}
+#PostPanelThreeMid
+{
+	padding: 10px 5px 10px 0px;
+	border-bottom: 1px solid #dbe5e9;
+	overflow: hidden;
+}
+#PostPanelThreeBottom
+{
+	padding: 10px 5px 10px 0px;
+	overflow: hidden;	
+}
+
+
+
+
+
+
+#archiveContent a
+{
+	text-decoration: none;
+}
+
+#archiveItem
+{
+	background-position: bottom;
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: auto;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+	min-height:40px;
+	height:auto !important;
+	height:40px;	
+}
+#archiveItem:hover
+{
+	background-image: url('wp-content/uploads/newsBackground.jpg');
+}
+
+#archiveDate
+{
+	position: absolute;
+	left: 7px;
+	top: 15px;
+	font-family: Calibri, Arial, Verdana;
+	color: #669999;
+	font-weight: bolder;
+	font-size: smaller;
+}
+#archiveYear
+{
+	position: absolute;
+	left: 9px;
+	top: 28px;
+	font-family: Calibri, Arial, Verdana;
+	color: #999999;
+	font-weight: bolder;
+	font-size: smaller;
+}
+#archiveExcerpt
+{
+	padding-left: 50px;	
+}
+
+
+
+
+.required
+{
+	color: Red;
+	font-weight: bold;	
+}
+#submitContact
+{
+	margin: 10px 0px 0px 30px;
+	background-image: url('wp-content/uploads/submitButton.gif');
+	border: 0px;
+	background-color: White;
+	width: 63px;
+	height: 30px;
+	color: White;
+	font-family: Calibri, Arial, Verdana;
+	font-weight: bold;
+	font-size: 90%;
+	float: left;
+}
+.FormRow
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	clear: both;
+}
+.FormElement
+{
+
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+h1
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #06567f;
+	font-size: 250%;
+	font-weight: normal;
+}
+h2
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #669999;
+	font-size: 150%;
+	font-weight: normal;
+}
+h3
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #669999;
+	font-size: 130%;
+	font-weight: normal;
+}
+h4
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+	font-weight: normal;
+}
+h5
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #06567f;
+	font-weight: normal;
+	font-size:120%;
+}
+h6
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #669999;
+	font-weight: bold;
+}
+p
+{
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+	font-weight: normal;
+}
+
+#PageContent ul
+{
+	list-style-type:disc;
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+	font-weight: normal;
+	margin-left: 25px;
+}
+
+#PageContent ol
+{
+	list-style-type:decimal;
+	font-family: Calibri, Arial, Verdana;
+	color: #5c5c5c;
+	font-weight: normal;
+	margin-left: 25px;
+}
+
+
+.borderbox
+{
+padding-top: 60px; 
+padding-right: 25px; 
+padding-left: 45px; 
+margin-bottom: 23px; 
+border-top-color: #5c5c5c; 
+border-right-color: #5c5c5c; 
+border-bottom-color: #5c5c5c; 
+border-left-color: #5c5c5c; 
+border-top-width: 1px; 
+border-right-width: 1px; 
+border-bottom-width: 1px; 
+border-left-width: 3px; 
+border-top-style: solid; 
+border-right-style: solid; 
+border-bottom-style: solid; 
+border-left-style: solid;
+}
+
+
+.spheres
+{
+	position: absolute;
+	top: 260px;
+}
